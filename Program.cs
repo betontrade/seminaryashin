@@ -53,7 +53,7 @@ Console.WriteLine($"Вторая цифра трехзначного числа 
 //______________________________Задача 13________________________
 //Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
-/*
+
 
 int delitter (int cifra)
 { 
@@ -77,11 +77,12 @@ int delitter (int cifra)
 Console.WriteLine("Введите число: ");
 
 int cifra =  Convert.ToInt32(Console.ReadLine());
+
 Console.WriteLine(" ");
 
 int itog = delitter(cifra);
 
-if (itog > 1)
+if (cifra  >= 100)
 {
     Console.WriteLine($"Третья цифра числа {cifra} равна: {itog}");
 }
@@ -90,7 +91,7 @@ else
     Console.WriteLine($"Третьей цифры в  числе {cifra} нет");
 }
 Console.WriteLine(" ");
+
 Console.WriteLine("Программа завершена");
 
 
-*/
