@@ -22,3 +22,70 @@
 
 */
 
+//______________________________Задача 10________________________
+//Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+
+/*
+
+int VtoroeChislo (int trehzn)
+{
+    int oststo = trehzn % 100;
+    int ostdec = oststo/10;
+    return ostdec;
+}
+
+Console.WriteLine("Начало работы программы, которая показывает вторую цифру трехзначного числа");
+Console.WriteLine(" ");
+Console.Write("Пожалуйста введите трехзначное число: ");
+
+int trizn = Convert.ToInt32( Console.ReadLine());
+
+int resull = (VtoroeChislo(trizn));
+
+Console.WriteLine(" ");
+
+Console.WriteLine($"Вторая цифра трехзначного числа {trizn}, равна: {resull}");
+
+*/
+
+
+
+//______________________________Задача 13________________________
+//Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+
+int delitter (int cifra)
+{ 
+    int dell = 1;
+
+    while (dell <= (cifra/100))
+        {
+            dell = dell *10;
+        }
+
+    int bezlevyh = cifra % dell; // убрали цифры слева от третьего числа
+
+    while (bezlevyh >10)  // убираем все цифры справа, после первого числа (циклом, деля на 10)
+        {
+         bezlevyh = bezlevyh / 10 ;
+        }
+    return bezlevyh;
+}
+
+
+Console.WriteLine("Введите число: ");
+
+int cifra =  Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(" ");
+
+int itog = delitter(cifra);
+
+if (itog > 1)
+{
+    Console.WriteLine($"Третья цифра числа {cifra} равна: {itog}");
+}
+else
+{
+    Console.WriteLine($"Третьей цифры в  числе {cifra} нет");
+}
+Console.WriteLine(" ");
+Console.WriteLine("Программа завершена");
