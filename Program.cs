@@ -27,8 +27,8 @@ Console.WriteLine(" ");
 Console.WriteLine($"Вторая цифра трехзначного числа {trizn}, равна: {resull}");
 
 
-*/
 
+*/
 
 
 //______________________________Задача 13________________________
@@ -69,7 +69,7 @@ if (cifra  >= 100)
 }
 else
 {
-    Console.WriteLine($"Третьей цифры в  числе {cifra} нет");
+    Console.WriteLine($"Третьей цифры в числе {cifra} нет");
 }
 Console.WriteLine(" ");
 
